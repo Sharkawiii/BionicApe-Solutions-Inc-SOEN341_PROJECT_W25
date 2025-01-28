@@ -9,3 +9,38 @@ ChatHaven is a versatile communication platform designed for seamless interactio
 * Suriya Paramathypathy
 * Levon Tavitian
 * Mathis Vuong
+
+## Requirements
+
+N.B this is all on windows, different steps differs depending on your operating system
+
+* Install Mongodb https://www.geeksforgeeks.org/how-to-install-mongodb-on-windows/
+* Install Node.js https://nodejs.org/en/download/
+
+
+## How to start the application
+* In your command prompt, shell or terminal, type the following command 
+
+        npm install
+
+* On another command prompt, start the mongodb server by typing the following command
+
+        mongod
+
+* On the other terminal, type 
+
+        node app.js
+
+to start the web server
+
+* On your favorite browser, put the url:
+
+    http://localhost:3000/
+
+*For any clarification, please consult the tutorials below
+
+https://www.geeksforgeeks.org/login-form-using-node-js-and-mongodb/
+
+https://www.geeksforgeeks.org/how-to-install-mongodb-on-windows/
+
+
