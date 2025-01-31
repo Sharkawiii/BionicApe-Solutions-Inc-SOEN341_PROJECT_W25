@@ -43,6 +43,22 @@ app.get("/secret", isLoggedIn, function (req, res) {
   res.render("secret");
 });
 
+app.get("/adminPage", isLoggedIn, async function (req, res) {
+  // retrieve all users and pass it to the html
+  var users = await User.find({});//users is the array of users
+  console.log(JSON.stringify(users))
+  res.render("adminPage",{users});
+});
+
+
+app.get("/editUser", isLoggedIn, async function (req, res) {
+  // retrieve all users and pass it to the html
+  var user = await User.findOne({ username: req.query.username });
+  console.log(JSON.stringify(user))
+  res.render("editUser",{user});
+});
+
+
 
 
 //=====================
@@ -114,7 +130,7 @@ app.post("/login", async function(req, res){
         if (result) {
           req.session.user=req.body.username;
           console.log("Set Current Session variable:" +req.session.user)
-          res.render("secret");
+          res.redirect("/adminPage");
         } else {
           res.status(400).json({ error: "password doesn't match" });
         }

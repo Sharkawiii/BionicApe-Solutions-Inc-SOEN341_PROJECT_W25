@@ -22,6 +22,8 @@ var User = new Schema({
 User.method.toJSON= function(){
     var obj=this.toObject();
     delete obj.password;
+    delete obj._id;
     return obj;
+
 }
 module.exports = mongoose.model('User', User)
