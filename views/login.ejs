@@ -1,17 +1,31 @@
 // Filename - views/login.ejs
+<!DOCTYPE html>
+<html lang-="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scaled=1.0">
+    <link rel="stylesheet" href="/styles/main.css">
+
+</head>
 
 <h1>login</h1>
 
 <form action="/login" method="POST">
     <input type="text" name="username"
-        placeholder="username">
+        placeholder="username"/>
     <input type="password" name="password" 
-        placeholder="password">
+        placeholder="password"/>
     <button>login</button>
 </form>
 
 <h1>This is home page</h1>
 
+<body>
+    <h1> Welcome to ChatHaven</h1>
+    <p>It all starts here.</p>
+</body>
+
 <li><a href="/register">Sign up!!</a></li>
 <li><a href="/login">Login</a></li>
 <li><a href="/logout">Logout</a></li>
+</html>

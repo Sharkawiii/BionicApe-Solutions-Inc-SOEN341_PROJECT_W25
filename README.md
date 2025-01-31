@@ -18,7 +18,7 @@ N.B this is all on windows, different steps differs depending on your operating 
 * Install Node.js https://nodejs.org/en/download/
 
 
-## How to start the application
+## How to start the application for the first time
 * In your command prompt, shell or terminal, type the following command 
 
         npm install
@@ -32,6 +32,12 @@ N.B this is all on windows, different steps differs depending on your operating 
         node app.js
 
 to start the web server
+
+## How to start the application
+
+* In the terminal, type
+
+        node app.js
 
 * On your favorite browser, put the url:
 
