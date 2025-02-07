@@ -8,7 +8,7 @@ ChatHaven is a versatile communication platform designed for seamless interactio
 * Mari Kajita : Backend Developer 
 * Suriya Paramathypathy : FrontEnd Developer
 * Levon Tavitian : Backend Developer, Sprint #1 Scrumaster
-* Mathis Vuong : Backend Developer
+* Mathis Vuong : Backend Developer, Secretary
 
 ## Requirements
 
